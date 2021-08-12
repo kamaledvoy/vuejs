@@ -1,0 +1,168 @@
+Vue
+
+=> front end, simplicity, performance and scalability, injectable
+
+
+https://vuejs.org/v2/guide/
+https://v3.vuejs.org/guide/installation.html#vue-devtools
+
+
+#v-bind
+https://v3.vuejs.org/api/directives.html#v-bind
+
+
+
+npm install vue@next
+
+vue ui
+
+vue create <app name>
+
+
+
+counter app
+https://stackoverflow.com/questions/60643907/how-do-i-add-min-and-max-value-to-my-vue-count-value
+
+add sweet alert
+https://www.npmjs.com/package/vue-sweetalert2
+npm i vue-sweetalert2
+
+add moment for date and time
+https://www.npmjs.com/package/moment
+https://momentjs.com/
+
+
+form validation
+https://vuelidate.js.org/#sub-basic-usage
+
+refer validation https://vuejsdevelopers.com/2018/08/27/vue-js-form-handling-vuelidate/
+
+
+git config --list
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+
+
+git config --global user.name "new name"
+git config --global user.email "new email"
+git config --list
+git help
+git help commit
+
+
+rm -rf .git
+git init
+
+
+
+https://randomuser.me/   API
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+
+vue create router vuex select to conntinue
+
+
+<template>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+    <router-link :to="{path: `/account/${course.id}`, query: {token: 'abc123'}}">Account</router-link> |
+    <router-link :to="`/account/${course.id}`">Account 2</router-link>
+  </div>
+  <router-view/>
+</template>
+
+<script>
+export default {
+  data(){
+    return{
+      course: {
+        name: "ReactJs",
+        id: 1122
+      }o
+    }
+  }
+}
+</script>
+
+
+ <h2>{{ $route.params }}</h2> acces for account page
+ <h2>{{ $route.params.id }}</h2>
+ 
+ <h2>{{ $router }}</h2>
+
+
+Gopi Krishnan
+12:47 PM
+aws configure sso //ap-south-1
+aws sso login --profile gsuite // login profile
+git config --edit --global
+
+https://api.github.com/users/kamal-design
+https://api.github.com/users/kamal-design/repos
+
+harblaith7/Nuxt-crash-Course
+
+
+
+
+first 
+
+add nuxt.config.js
+add tailwind_config.js
+
+
+main.scss file add
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+v-for="logo in 5" :key="logo"    => logo display for loop
+
+
+
+http://localhost:3000/_tailwind/
+https://www.vue-tailwind.com/docs/modal/  
+https://tailwindcss.com/docs/functions-and-directives#apply
+
+
+
+check  vue language 
+
+<a href="https://www.tutorialsplane.com/vue-js-detect-browser-language/#:~:text=We%20can%20use%20navigator%20language,and%20run%20the%20code%20online.">open</a>
+
+<p>{{result}}</p>
+	<button @click="myFunction()">Click Me</button>
+</div>
+<script>
+ new Vue({
+ el: '#app',
+  
+  data: {
+	  result: ''
+  },  
+   methods:{
+    myFunction: function () {		
+	 this.result = "Browser Language = "+navigator.language; 		 
+	 }
+    }
+});
+</script>
+
+
+
+
+[dir='rtl'] .masthead__btn-arrow {
+left: -54px;
+right: auto;
+transform: scaleX(-1);
+@screen sm {
+left: -12px;
+}
+
+@screen md {
+left: -54px;
+}
+}

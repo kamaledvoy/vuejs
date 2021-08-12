@@ -1,0 +1,77 @@
+
+
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html#cliv2-linux-install
+
+Gopi Krishnan
+12:47 PM
+aws configure sso //ap-south-1
+aws sso login --profile gsuite // login profile
+git config --edit --global
+
+
+
+git config --edit --global
+nano .gitconfig
+
+aws sso login --profile kamalEdvoy
+
+
+
+
+export AWS_ACCESS_KEY_ID="ASIAVG4MAJKS24CNNXS2"
+export AWS_SECRET_ACCESS_KEY="pEZYsq6CwBbltWxsWMae6KxrKxjN0VpM4LlWk4Hk"
+export AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEEgaCWV1LXdlc3QtMSJGMEQCIAh8qwJF/uxlF730JWjDaCRa+7dECVFTSSLsXeHls6HcAiBVLXPdknDYQiBnHbvPcalIKD/py1qMvkTVBmT/gTOPCyqHAwhBEAAaDDM1ODM4NjUxODY5MyIMIwDkwPZ+YhjfW5mAKuQC8JT+POkuaKS9jB9MOLoEPWwB0kpPQukn29iXGcgyHEShdmG0jWnsKXfomCDOXPxM8BQ4ql4jf56sze1HjFvj/0gOgvD48BtV9eItRwoulX8aE6ztngxjn9/W54ccACkOVzXMWn/JNOAwHogyCZIhzeST4PrvZ84U/iwTIgc/F7UstGQlOzAQwj0rgSh+W6SnStX0RPo4OTcZbBvi0hgk6QcX2zoWtZvoIF7ZLS37TZyDMAd72GMKW3XGqN3mnkS8xQPRgSy9M7shiA9XTzVu4OLqeAO4xteurL4xIVqQAzVdffyQN8E/bzv5P6xEpc7LwXOMMP6KGQf5/wM0cxFcF/7sjREuHRnxaJbZbFizPFdP16F0pqHtgsIJ9SqdPkgGnt4BVGEtX+PQ//bYhjZWA3BRjsEQRKgSc13jXa4Iq/yAQvOVLecAMGTBrQyaXTSBK8XIbSLd4l7mMyfGUjhTKd3eELww++7EhwY6pwF81Dm6zjGrLor+sBuFkoHx6Pndlp0ie+tKVqmeR6cJmok3rsPARaPiGo8p2NPK4B6eBtSwDzZ4posa9opReklRDkdu2TNmWXMOI7M5oyMDmJMFcWCMS7YV381avNOpdROuuT+hz91SZYTvoxyXExDGsrySOKa4thxCl/1oSp2Z44ee3nhU1wKsl0hE/o5mvj4ShZtw7WocMJFDVDWKjDoXefrvsXLYPw=="
+
+
+
+git branch
+git fetch
+
+nvm use 12.19.1
+nvm install 12.19.1
+
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "6714128",
+	formId: "dfdb6743-35e2-403c-8aaa-86dcd3975312"
+});
+</script>
+
+https://frontendscript.com/demo/responsive-css-only-carousel-slider/
+
+
+
+country page refer 
+https://edvoy.com/articles/uks-turing-scheme-shows-its-strength/
+https://edvoy.com/institutions/university-of-birmingham/
+
+BECOME AN INTRODUCER
+
+Join our network and help make education truely global.
+
+Join our network of over 1,000 recruitment partners and counting.
+
+Our onboarding process is simple and straightforward and our team of experts will guide you every step of the way.
+
+Get in touch
+
+Submit your interest to get started and a member of our partnerships team will be in touch. Discuss the benefits of joining our network of introducers.
+
+Apply and get verified
+
+We have a straightforward online application process where we'll ask you about your business so we can verify your account and get you setup.
+
+You're all setup
+Once verified and approved, you'll be invited to access our online platform where you'll be able to start managing your students. All in one place. 
+
+
+
+
+Laptop- CZ129S2
+Mouse- CN-05NT8R-PRC00-04D-0QXK

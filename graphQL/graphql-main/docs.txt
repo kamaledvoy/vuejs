@@ -1,0 +1,47 @@
+http://localhost:2021/graphql
+
+mutation{
+  createCourse(input:{
+    courseName: "Vue Js Bootcamp"
+    price: 525
+    stack: WEB
+    teachingAssists:[
+      {
+        firstName: "Kamal"
+        lastName: "samy"
+        experience: 1
+      }, {
+        firstName: "Arun"
+        lastName: "Arumugam"
+        experience: 3
+      }
+    ]
+    
+  }){
+    id,
+    courseName
+  }
+}
+
+
+// output
+
+{
+  "data": {
+    "createCourse": {
+      "id": "5FcuCLPecOapABWtN_9EY",
+      "courseName": "Vue Js Bootcamp"
+    }
+  }
+}
+
+
+// get above id to 
+query {
+  getCourse(id: "5FcuCLPecOapABWtN_9EY"){
+    id
+    teachingAssists{
+      experience
+    }
+  }
+}

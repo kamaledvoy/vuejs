@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heght Calculation</title>
+    <style>
+
+        /* sass code */
+        /* .screen {
+                position: relative;
+            }
+            .screen [data-app] {
+                $height: 180px;
+                $offset: 20%;
+                $blocks_per_row: 5;
+
+                position: absolute;
+                width: 20%;
+
+                @for $i from 0 through 20 {
+                    $y: floor($i / $blocks_per_row);
+                    $x: $i % 5;
+
+                    &:nth-child(#{$y}n+#{$i}) {
+                        left: $x * $offset;
+                        top: $y * $height;
+                    }
+                }
+            } */
+        /* flexbox code */
+        .screen {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+
+            margin-left: auto;
+            margin-right: auto;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .screen [data-app] {
+            flex: 0 1 19%;
+            height: 100px;
+            margin: 1px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="screen">
+        <div data-app>asdf1</div>
+        <div data-app>asdf2</div>
+        <div data-app>asdf3</div>
+        <div data-app>asdf4</div>
+        <div data-app>asdf5</div>
+        <div data-app>asdf6</div>
+        <div data-app>asdf7</div>
+        <div data-app>asdf8</div>
+        <div data-app>asdf9</div>
+        <div data-app>asdf10</div>
+        <div data-app>asdf11</div>
+    </div>
+
+    
+</body>
+</html>

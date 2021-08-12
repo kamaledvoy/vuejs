@@ -1,0 +1,92 @@
+app create typescript using vue3 manual select
+
+npm run serve
+
+// Lession-1
+<template>
+  <div class="app">
+    <h1> {{ name }} - {{ age }}</h1>
+    <button @click="changeName('Kamal')">Change Name</button>
+    <button @click="changeAge('25')">Change Age</button>
+  </div>
+</template>
+<script lang="ts">
+import { defineComponent, reactive, ref, toRefs } from 'vue';
+
+export default defineComponent({
+  name: 'App',
+  components: {
+   
+  },
+  setup(){
+    /* const state = reactive({
+      name: 'Link',
+      age: 30 as number | string
+    })
+
+    state.name = 'Arun' //cannot change type
+    state.age = 45
+    return{ ...toRefs(state)} */
+
+    const name = ref('Name')
+    const age = ref<number | string>('age')
+    return { name, age }
+  },
+  methods: {
+    changeName(name: string){
+      this.name  = name
+      return name
+    },
+    changeAge(age: number | number){
+      this.age = age
+      return age
+    }
+  }
+});
+</script>
+
+
+// Lession-2 
+
+//const age = ref<number | string>(25)
+
+
+<template>
+  <div class="app">
+    <p>{{ jobs[2].location }}</p>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent, reactive, ref, toRefs } from 'vue';
+import Job from './types/Job'
+
+
+export default defineComponent({
+  name: 'App',
+  components: {
+   
+  },
+  setup(){   
+    const jobs = ref<Job[]>([
+      {title: 'John', location: 'Tharmapuri', salary: 30000, id: '1'},
+      {title: 'Arun', location: 'Krishnagiri', salary: 20000, id: '2'},
+      {title: 'Arivoli', location: 'Karaikal', salary: 30000, id: '3'},
+      {title: 'Nagaraj', location: 'Gumoodipondi', salary: 100000, id: '4'},
+      {title: 'Athiyappan', location: 'Tharmapuri', salary: 50000, id: '5'}
+    ])
+    return { jobs }
+  }, 
+});
+</script>
+
+// interface jobs.ts
+
+interface Job {
+    title: string,
+    location: string,
+    salary: number,
+    id: string
+}
+
+export default Job

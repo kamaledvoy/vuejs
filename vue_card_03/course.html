@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Vue JS Card array</title>
+  </head>
+  <body class="bg-dark text-white py-5">
+    <div class="container">
+      
+        <div class="row" id="vapp">
+            <div class="col-md-12">
+                <h1 class="text-center h4">Front End Development Course</h1>
+            </div>
+
+            <div class="col-md-4" v-for="(course, index) in courseList" :key="course.id" >
+                
+                <div class="card vapp my-3">
+                    <img :src="course.courseImage" class="card-img-top" alt="Image Title">
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">{{course.courseName}}</h5>
+                      <p class="card-text">{{course.subTitle}}</p>
+                      <h6 class="card-title text-danger">Rs. {{course.price}}</h6>
+                      <a :href="course.url" class="btn btn-primary">Go to Course</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>          
+
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

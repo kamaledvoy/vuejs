@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ece6e9;
+}
+
+header {
+    width: 100%;
+    background-color: cornsilk;
+
+}
+header .orderbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+
+}
+header .orderbtn button {
+    display: inline-block;
+    margin: 6px 6px;
+    padding: 10px 20px;
+    background-color: lightcoral;
+    border: 1px solid coral;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.job-list {
+    max-width: calc(100% - 250px);
+    margin: 0 auto;
+}
+
+.job-list ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-position: inside;
+}
+.job-list ul li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: cornsilk;
+    border: 1px solid cornsilk;
+    padding: 10px 25px;
+    transition: transform 0.3s ease;
+}
+.job-list ul li:hover {
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.3) 0px 10px 20px;
+    transform: scale(1,1.1);
+}
+
+.job-list ul li h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job-list ul li .salary {
+    color: coral;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.job-list ul li .description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}

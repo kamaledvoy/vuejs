@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Vue JS Hero </title>
+  </head>
+  <body class="bg-dark text-white py-5" id="vapp">
+    
+    <div class="container">
+       
+       <!-- firstone -->
+        <h1 class="display-5">Single hero</h1>
+        <select v-model="heroSelect" name="" id="" class="form-select">
+            <option selected value=""> Choose a super hero</option>
+            <option >Iron Man</option>
+            <option >Hulk</option>
+            <option >Thor</option>
+        </select>
+        <h2 class="btn bg-warning mt-3"> Calling, {{heroSelect}}</h2>
+
+        <!-- secondone -->
+        <h1 class="display-5">Avangers Team</h1>
+        <select v-model="avangersSelect" multiple name="" id="two" class="form-select">
+            <option selected value=""> Choose Multiple super hero</option>
+            <option value="Iron Man">Iron Man</option>
+            <option value="Peter Parker">Spider man</option>
+            <option value="Cap. America">Caption America</option>
+        </select>
+        <h2 class="btn bg-warning mt-3"> Team of, {{avangersSelect}}</h2>
+
+         <!-- Third one -->
+         <h1 class="display-5">Bond Code</h1>
+         <select v-model="myDynamic" name="" id="three" class="form-select">
+             <option selected value=""> Choose bond code...</option>
+             <option v-for="option in myBonds" :value="option.value">{{option.text}}</option>
+         </select>
+         <h2 class="btn bg-warning mt-3"> Bond code of, {{myDynamic}}</h2>
+
+
+    </div>
+
+  </body>
+
+  <script src="./script.js"></script>
+</html>
