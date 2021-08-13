@@ -1,0 +1,96 @@
+.container {
+  @apply px-6;
+  max-width: 100%;
+
+  @screen md {
+    @apply px-4;
+    max-width: 100%;
+  }
+
+  @screen lg {
+    @apply px-4;
+    max-width: 100%;
+  }
+
+  @screen xl {
+    max-width: theme('screens.xl');
+  }
+
+  &--w-full {
+    @apply px-0;
+
+    @screen md {
+      @apply px-4;
+      max-width: 100%;
+    }
+
+    @screen lg {
+      @apply px-4;
+      max-width: 100%;
+    }
+
+    @screen xl {
+      max-width: theme('screens.xl');
+    }
+
+    &--w-full {
+      @apply px-0;
+
+      @screen lg {
+        @apply px-4;
+      }
+    }
+
+    &--account,
+    &--content {
+      @apply p-6;
+
+      @screen lg {
+        @apply my-12;
+      }
+    }
+
+    &--slim {
+      max-width: 1120px;
+    }
+
+    &--w-reading {
+      @apply px-6 mx-auto;
+      max-width: 680px;
+
+      @screen lg {
+        @apply px-0;
+      }
+    }
+
+    &--wide {
+      max-width: 1600px;
+    }
+  }
+
+  &--account,
+  &--content {
+    @apply p-6;
+
+    @screen lg {
+      @apply my-12;
+    }
+  }
+
+  &--slim {
+    max-width: 1120px;
+  }
+
+  &--w-reading {
+    @apply px-6 mx-auto;
+    max-width: 680px;
+
+    @screen lg {
+      @apply px-0;
+    }
+  }
+
+  &--wide {
+    max-width: 1600px;
+  }
+}

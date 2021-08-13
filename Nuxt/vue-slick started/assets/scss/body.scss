@@ -1,0 +1,13 @@
+body {
+  @apply text-base font-normal leading-normal;
+  color: theme('colors.black');
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    sans-serif;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.progressier-widget {
+  display: none;
+}
